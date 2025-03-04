@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #ff5722;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .navbar h1 {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .search-bar {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .search-bar input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+        }
+
+        .restaurant-suggestions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .restaurant-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .restaurant-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .restaurant-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .restaurant-card p {
+            color: #888;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #25d366;
+            color: white;
+            font-size: 14px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128c7e;
+        }
+
+        .logout-btn {
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .logout-btn:hover {
+            background-color: #e64a19;
+        }
+
+        /* Style for the needs section */
+        .needs-section {
+            margin: 40px 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .needs-section h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .need-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .need-item .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #ff5722;
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            line-height: 50px;
+            margin-right: 20px;
+        }
+
+        .need-item p {
+            font-size: 16px;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Zomato</h1>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search for restaurants, cuisines, or dishes...">
+    </div>
+
+    <div class="restaurant-suggestions">
+        <div class="restaurant-card">
+            <img src="https://b.zmtcdn.com/data/pictures/7/20614137/720a89998bae627df3d74a80addf0aec.jpg" alt="Restaurant 1">
+            <h3>Ranwara</h3>
+            <p>spical dum biryani,  </p>
+            <a href="https://wa.me/1234567890?text=Hi%20I%20would%20like%20to%20order%20from%20Restaurant%201" class="whats
